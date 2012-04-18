@@ -3,6 +3,10 @@
 //James Floyd II 
 //April 19, 2012
 
+
+
+/*
+
 //Wait for DOM to be ready
 window.addEventListener("DOMContentLoaded", function(){
 
@@ -292,3 +296,5 @@ window.addEventListener("DOMContentLoaded", function(){
 	var save = $("submit");
 	save.addEventListener("click", validate);
 });
+
+*/
