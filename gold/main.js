@@ -3,12 +3,22 @@
 //April 19, 2012
 
 
+var parseAddGiftForm = function(data){
+	// uses form data here;
+	console.log(data);
+};
 
 $(document).ready(function(){
 
 	var aiform = $('#additemform');
 	
-	aiform.validate();
+	aiform.validate({
+		invalidHandler: function(form, validator){},
+		submitHandler: function(){
+			var data = aiform.serializeArray();
+			parseAddGiftForm(data);
+		}
+	});
 });
 
 
