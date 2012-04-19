@@ -34,11 +34,6 @@ legend{
 	font-weight: bold;
 }
 
-label{
-	color: red;
-	opacity:0.85;
-}
-
 input{
 	color: red;
 }
@@ -54,4 +49,12 @@ nav{
 
 p{ 
 	color: white;
+}
+
+label.error{
+	display: block; margin: 10px 0; color: red;
+}
+
+#aierrorslink{
+	display: none;
 }

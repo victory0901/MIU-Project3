@@ -3,12 +3,34 @@
 //April 19, 2012
 
 
+var parseAddGiftForm = function(data){
+	// uses form data here;
+	console.log(data);
+};
 
 $(document).ready(function(){
 
-	var aiform = $('#additemform');
+	var aiform = $('#additemform'),
+		aierrorslink = $('#aierrorslink')
+	;
 	
-	aiform.validate();
+	aiform.validate({
+		invalidHandler: function(form, validator){
+			aierrorslink.click();
+			var html = '';
+			for(var key in validator.submitted){
+				var label = $('label[for^="'+ key +'"]');
+				var legend = label.closest('fieldset').find('.ui-controlgroup-label');
+				var fieldName = legend.length ? legend.text() : legend.text();
+				html += '<li>'+ fieldName +'</li>';
+			};
+			$("#additemerrors ul").html(html);
+		},
+		submitHandler: function(){
+			var data = aiform.serializeArray();
+			parseAddGiftForm(data);
+		}
+	});
 });
 
 
