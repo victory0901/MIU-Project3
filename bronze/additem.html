@@ -34,10 +34,10 @@ April 19, 2012
 				<legend>Add Gift</legend>
 				<ul id="errors"></ul>
 				<ul>
-					<li><label for="fname">First Name:</label><input type="text" id="fname" /></li>
-					<li><label for="lname">Last Name:</label><input type="text" id="lname" /></li>
-					<li><label for="gift">Gift:</label><input type="text" id="gift" /></li>
-					<li><label for="quantity">Quantity</label><input type="range" min="1" max="10" name="quantity" type="range" id="quantity"/></li>
+					<li><label for="fname">First Name:</label><input type="text" id="fname" placeholder="Johnny" /></li>
+					<li><label for="lname">Last Name:</label><input type="text" id="lname" placeholder="Appleseed"/></li>
+					<li><label for="gift">Gift:</label><input type="text" id="gift"  /><p>Enter gift name here</p></li>
+					<li><label for="quantity">Quantity</label><input type="range" value="1" min="1" max="50" name="quantity" type="range" id="quantity"/></li>
 					<li><label for="purchase">Where to purchase?: </label>
 						<ul>
 							<li><input type="radio" checked value="online" id="online" name="local" /><label for="online">Online</label></li>
@@ -46,10 +46,11 @@ April 19, 2012
 					</li>
 					<li id="select"><label for="group">Relationship:</label></li>
 					</li>
-					<li><label for="buydate">Buy gift by:</label><input type="date" min="2012-01-05" max="2012-12-24" id="buydate" name="buydate" required aria-required="true"/></li>
-					<li><label for="notes">Additional Notes:</label><textarea id="notes"></textarea></li>
+					<li><label for="buydate">Buy gift by:</label><input type="date" min="2012-04-19" max="2012-12-24" id="buydate" name="buydate" required aria-required="true"/></li>
+					<li><label for="notes">Additional Notes:</label><textarea id="notes">Enter Additional Notes Here</textarea></li>
 				</ul>
 			</fieldset>
+			<input type="reset" value="Reset"/>
 			<input type="submit" value="Finish" id="submit"/>
 		</form>
 		<script src="json.js" type="text/javascript"></script>

@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var aiform = $('#additemform'),
 		aierrorslink = $('#aierrorslink')
 	;
-	
+
 	aiform.validate({
 		invalidHandler: function(form, validator){
 			aierrorslink.click();
