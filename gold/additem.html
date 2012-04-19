@@ -47,17 +47,18 @@ April 19, 2012
 				
 				<div data-role="fieldcontain">
 					<label for="firstname">First Name</label>
-					<input type="text" name="firstname" id="firstname" class="required" />
+					<input type="text" name="firstname" id="firstname" class="required" placeholder="Johnny"/>
 				</div>
 				
 				<div data-role="fieldcontain">
 					<label for="lastname">Last Name</label>
-					<input type="text" name="lastname" id="lastname" class="required" />
+					<input type="text" name="lastname" id="lastname" class="required" placeholder="Appleseed" />
 				</div>
 				
 				<div data-role="fieldcontain">
-					<label for="gift">Last Name</label>
+					<label for="gift">Gift</label>
 					<input type="text" name="gift" id="gift" class="required" />
+					<p>Type name of gift here</p>
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -68,23 +69,28 @@ April 19, 2012
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Where to buy?</legend>
-						<input type="radio" value="Store" name="store" id="store" />
+						<input type="checkbox" value="Store" name="store" id="store" />
 						<label for="store">Store</label>
-						<input type="radio" value="Online" name="online" id="online" />
+						<input type="checkbox" value="Online" name="online" id="online" checked="true"/>
 						<label for="online">Online</label>
 					</fieldset>
 				</div>
 				
-				
-				
-				
+				<div data-role="fieldcontain">
+					<label for="relationship" class="select">Relationship:</label>
+					<select name="relationship" id="relationship">
+   					<option value="choose">--Choose a Group--</option>
+   					<option value="family">Family</option>
+   					<option value="nonfamily">Non- Family</option>
+					</select>
+				</div>
 				
 				
 				
 				
 				<div data-role="fieldcontain">
 					<label for="notes">Notes:</label>
-					<textarea></textarea>
+					<textarea>Enter additional notes here...</textarea>
 				</div>			
 				
 				<div data-role="fieldcontain">
