@@ -44,6 +44,14 @@ April 19, 2012
 			<h1>Add Gift</h1>
 		</div>
 		
+		<div>
+			<nav>
+				<a href="#" data-ajax="false" id="clear">Clear Stored Data</a>
+				<a href="#" data-ajax="false" id="displayLink">Display Data</a>
+				<a href="additem.html" data-role="button" data-mini="true" id="addNew" style="display:none;">Add New Item</a>
+			</nav>
+		</div>
+		
 		<div data-role="content">
 			
 			<form action="" method="post" id="additemform">
@@ -61,7 +69,7 @@ April 19, 2012
 				<div data-role="fieldcontain">
 					<label for="gift">Gift</label>
 					<input type="text" name="gift" id="gift" class="required" />
-					<p>Type name of gift here</p>
+					<p>Enter name of gift here</p>
 				</div>
 				
 				<div data-role="fieldcontain">
@@ -80,8 +88,8 @@ April 19, 2012
 				</div>
 				
 				<div data-role="fieldcontain">
-					<label for="mydate">Some Date</label>
-					<input name="mydate" id="mydate" type="date" data-role="datebox" data-options='{"mode": "calbox"}'>
+					<label for="mydate">Buy gift by:</label>
+					<input name="mydate" id="mydate" type="date" data-role="datebox" data-options='{"mode": "calbox"}' class="required" placeholder="4/19/2012">
 				</div>
 				
 				
@@ -98,7 +106,19 @@ April 19, 2012
 			
 			</form>
 		</div> <!-- Content Ends -->
-	</div> <!-- Add Item ends -->
+		
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-role="button" data-icon="home" data-ajax="false" >Home</a></li>
+					<li><a href="../bronze/index.html" data-role="button" data-icon="star" data-ajax="false" >Bronze App</a></li>
+					<li><a href="http://victory0901.github.com/MIU-Project2" data-role="button" data-icon="info">GH-Pages</a></li>
+				</ul>
+			</div><!-- Navbar ends -->
+		</div><!-- Footer ends -->
+		</div> <!-- Add Item Form ends -->
+	
+	
 	
 	<div data-role="dialog" id="additemerrors" >
 		
