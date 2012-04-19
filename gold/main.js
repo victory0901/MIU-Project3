@@ -1,7 +1,31 @@
-
 //MIU Project 3
 //James Floyd II 
 //April 19, 2012
+
+
+
+$(document).ready(function(){
+
+	var aiform = $('#additemform');
+	
+	aiform.validate();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 //Wait for DOM to be ready
 window.addEventListener("DOMContentLoaded", function(){
@@ -292,3 +316,5 @@ window.addEventListener("DOMContentLoaded", function(){
 	var save = $("submit");
 	save.addEventListener("click", validate);
 });
+
+*/
